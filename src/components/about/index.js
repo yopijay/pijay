@@ -21,7 +21,7 @@ const Index = () => {
     }, []);
 
     return (
-        <Box width= { width } padding= "100px 40px">
+        <Box width= { width } padding= "100px 40px" bgcolor= "#dfe6e9">
             <Container>
                 <Box display= "flex" flexDirection= "column" justifyContent= "flex-start" alignItems= "stretch">
                     <Box display= "flex" flexDirection= "row" justifyContent= "flex-start" alignItems= "center">
