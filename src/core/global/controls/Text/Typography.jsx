@@ -5,11 +5,10 @@ import { styled } from '@mui/styles';
 // import { makeStyles } from '@mui/styles';
 
 const Typography = ( props ) => {
-    const { text= '', fontFamily= 'Gilroy Light', fontSize= '100%', color= '#dfe6e9', ...other } = props;
+    const { text= '', fontFamily= 'Gilroy Light', color= '#dfe6e9', ...other } = props;
 
     const Text = styled(Box)({
         fontFamily: fontFamily,
-        fontSize: fontSize,
         color: color
     });
 

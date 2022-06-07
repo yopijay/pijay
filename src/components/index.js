@@ -1,24 +1,18 @@
 // Libraries
 import React, { useEffect, useState } from 'react';
 import { Box } from '@mui/material';
-import { getViewportState, watchViewport } from 'tornis';
+import { watchViewport } from 'tornis';
 
 // Layouts
 import Intro from './intro';
 
 const Index = () => {
-    let [ width, setWidth ] = useState(getViewportState().size.x);
-    let [ height, setHeight ] = useState(getViewportState().size.y);
+    let [ width, setWidth ] = useState();
+    let [ height, setHeight ] = useState();
 
-    useEffect(() => {
-        const viewport = ({ size }) => {
-            if(size.changed) {
-                setWidth(getViewportState().size.x);
-                setHeight(getViewportState().size.y);
-            }
-        }
     
-        watchViewport(viewport);
+    useEffect(() => {
+        watchViewport(({ size }) => { setWidth(size.x); setHeight(size.y) });
     }, []);
 
     return (
