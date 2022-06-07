@@ -1,23 +1,29 @@
 // Libraries
 import React from 'react';
-import { Box, Grid, Toolbar } from '@mui/material';
+import { Box } from '@mui/material';
+import { Link } from 'react-router-dom';
+
+// Core
+import Ctrl from '../../core/global/controls/Controls';
 
 const Index = () => {
     return (
-        <Box>
-            <Toolbar />
-            <Toolbar />
-            <Grid container direction= "row" justifyContent= "center" alignItems= "center" spacing= { 2 }>
-                <Grid item xs= { 12 } md= { 6 }>
-                    <Box display= "flex" flexDirection= "column" justifyContent= "flex-end" alignItems= "flex-end" padding= "0 10px">
-                        <Box sx= {{ fontSize: '600%', fontFamily: 'Theories', color: '#dcdde1' }}>Hi,</Box>
-                        <Box sx= {{ fontSize: '320%', fontFamily: 'Theories', color: '#81ecec' }}>I`m a Front-End</Box>
-                        <Box sx= {{ fontSize: '320%', fontFamily: 'Theories', color: '#81ecec' }}>Web Developer</Box>
-                        <Box sx= {{ fontSize: '250%', fontFamily: 'Theories', color: '#dcdde1' }}>With 3 Years of Experience</Box>
-                        <Box sx= {{ fontSize: '250%', fontFamily: 'Theories', color: '#dcdde1' }}>In Web-development</Box>
-                    </Box>
-                </Grid>
-            </Grid>
+        <Box display= "flex" flexDirection= "column" justifyContent= "center" alignItems= "center">
+            <Box display= "flex" flexDirection= "row" justifyContent= "flex-start" alignItems= "center">
+                <Ctrl.Typography text= "Hi, I`m " fontFamily= "Gonzi Light" fontSize= "220%" marginRight= "10px" />
+                <Ctrl.Typography text= "Paul John Judan" fontFamily= "Gonzi Light" fontSize= "220%" color= "#00cec9" />
+                <Ctrl.Typography text= "." fontFamily= "Gonzi Light" fontSize= "220%" />
+            </Box>
+            <Box display= "flex" flexDirection= "row" justifyContent= "flex-start" alignItems= "center">
+                <Ctrl.Typography text= "I`m a" fontFamily= "Gonzi Light" fontSize= "220%" marginRight= "10px" />
+                <Ctrl.Typography text= "Front-End Web Developer" fontFamily= "Gonzi Light" fontSize= "220%" />
+                <Ctrl.Typography text= "." fontFamily= "Gonzi Light" fontSize= "220%" />
+            </Box>
+            <Box padding= "5px 12px 5px 22px" border= "solid 2px #00cec9" marginTop= "20px">
+                <Link to= "/" style= {{ textDecoration: 'none' }}>
+                    <Ctrl.Typography text= "View my work" fontFamily= "Gilroy Light" fontSize= "120%" marginRight= "10px" color= "#00cec9" />
+                </Link>
+            </Box>
         </Box>
     );
 }

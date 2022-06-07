@@ -5,7 +5,11 @@ import { createTheme, CssBaseline } from '@mui/material';
 import { ThemeProvider } from '@emotion/react';
 
 // Assets
+import './assets/css/global.css';
+import './assets/css/ball.css';
+import './assets/css/scrollbar.css';
 import './assets/fonts/font.css';
+import './assets/js/ball.js';
 
 //Layouts
 import Core from './Core';
