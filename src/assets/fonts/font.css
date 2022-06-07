@@ -29,3 +29,19 @@
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'Gonzi Light';
+    src: url('Gonzi-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gonzi Bold';
+    src: url('Gonzi-Bold.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
