@@ -1,7 +1,8 @@
 // Libraries
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Box } from '@mui/material';
 import { Link } from 'react-router-dom';
+import { watchViewport } from 'tornis';
 
 // Core
 import Ctrl from '../../core/global/controls/Controls';
@@ -10,22 +11,31 @@ import Ctrl from '../../core/global/controls/Controls';
 import { Text } from '../../core/global/design/Text';
 
 const Index = () => {
+    let [ width, setWidth ] = useState();
+    let [ height, setHeight ] = useState();
+
+    
+    useEffect(() => {
+        watchViewport(({ size }) => { setWidth(size.x); setHeight(size.y) });
+    }, []);
 
     return (
-        <Box display= "flex" flexDirection= "column" justifyContent= "center" alignItems= "center">
-            <Box display= "flex" flexDirection= "row" justifyContent= "flex-start" alignItems= "center">
-                <Ctrl.Typography text= "Hi, I`m " fontFamily= "Caviar" className= { Text().title } marginRight= "10px" />
-                <Ctrl.Typography text= "Paul John Judan" fontFamily= "Caviar" className= { Text().title } color= "#00cec9" />
-                <Ctrl.Typography text= "." fontFamily= "Caviar" className= { Text().title } />
-            </Box>
-            <Box display= "flex" flexDirection= "row" justifyContent= "flex-start" alignItems= "center">
-                <Ctrl.Typography text= "I`m a" fontFamily= "Caviar" className= { Text().title } marginRight= "10px" />
-                <Ctrl.Typography text= "Front-End Web Developer." className= { Text().title } fontFamily= "Caviar" />
-            </Box>
-            <Box padding= "5px 12px 5px 22px" border= "solid 2px #00cec9" marginTop= "20px">
-                <Link to= "/" style= {{ textDecoration: 'none' }}>
-                    <Ctrl.Typography text= "View my work" fontFamily= "Caviar" fontSize= "120%" marginRight= "10px" color= "#00cec9" />
-                </Link>
+        <Box width= { width } height= { height } bgcolor= "#2d3436" display= "flex" flexDirecton= "row" justifyContent= "center" alignItems= "center" overflow= "hidden" id= "landing">
+            <Box display= "flex" flexDirection= "column" justifyContent= "center" alignItems= "center">
+                <Box display= "flex" flexDirection= "row" justifyContent= "flex-start" alignItems= "center">
+                    <Ctrl.Typography text= "Hi, I`m " className= { Text().title } marginRight= "10px" />
+                    <Ctrl.Typography text= "Paul John Judan" className= { Text().title } color= "#00cec9" />
+                    <Ctrl.Typography text= "." className= { Text().title } />
+                </Box>
+                <Box display= "flex" flexDirection= "row" justifyContent= "flex-start" alignItems= "center">
+                    <Ctrl.Typography text= "I`m a" className= { Text().title } marginRight= "10px" />
+                    <Ctrl.Typography text= "Front-End Web Developer." className= { Text().title } />
+                </Box>
+                <Box display= "flex" flexDirection= "row" justifyContent= "center" alignItems= "center" border= "solid 1px #00cec9" padding= "6px 17px" marginTop= "20px">
+                    <Link to= "/" style= {{ textDecoration: 'none' }}>
+                        <Ctrl.Typography text= "View my work" fontSize= "120%" color= "#00cec9" />
+                    </Link>
+                </Box>
             </Box>
         </Box>
     );
