@@ -6,26 +6,26 @@ export const Text = makeStyles(({
         fontSize: '220%',
 
         '@media (max-width: 760px)': {
-            fontSize: '170% !important',
+            fontSize: '190% !important',
         },
         '@media (max-width: 500px)': {
-            fontSize: '140% !important',
+            fontSize: '160% !important',
         },
         '@media (max-width: 400px)': {
-            fontSize: '120% !important',
+            fontSize: '150% !important',
         },
     },
     info: {
-        fontSize: '110%',
+        fontSize: '130%',
 
         '@media (max-width: 760px)': {
-            fontSize: '100% !important',
+            fontSize: '115% !important',
         },
         '@media (max-width: 500px)': {
-            fontSize: '95% !important',
+            fontSize: '110% !important',
         },
         '@media (max-width: 400px)': {
-            fontSize: '90% !important',
+            fontSize: '100% !important',
         },
     }
 }));

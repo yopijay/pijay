@@ -8,6 +8,7 @@ import Ctrl from '../../core/global/controls/Controls';
 
 // Design
 import { Text } from '../../core/global/design/Text';
+import { Image } from '../../core/global/design/Image';
 
 // Assets
 import Profile from '../../assets/images/profile.jpg';
@@ -36,7 +37,7 @@ const Index = () => {
                         </Grid>
                         <Grid item xs= { 12 } md= { 6 }>
                             <Box display= "flex" flexDirection= "row" justifyContent= "center" alignItems= "center">
-                                <Box width= "400px" height= "400px" overflow= "hidden" borderRadius= "100%" border= "solid 2px #636e72">
+                                <Box className= { Image().profile } overflow= "hidden" borderRadius= "100%" border= "solid 2px #636e72">
                                     <img src= { Profile } width= "100%" alt= "Profile" />
                                 </Box>
                             </Box>
