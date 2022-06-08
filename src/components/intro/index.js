@@ -1,7 +1,6 @@
 // Libraries
 import React, { useEffect, useState } from 'react';
 import { Box } from '@mui/material';
-import { Link } from 'react-router-dom';
 import { watchViewport } from 'tornis';
 
 // Core
@@ -30,11 +29,6 @@ const Index = () => {
                 <Box display= "flex" flexDirection= "row" justifyContent= "flex-start" alignItems= "center">
                     <Ctrl.Typography text= "I`m a" className= { Text().title } marginRight= "10px" />
                     <Ctrl.Typography text= "Front-End Web Developer." className= { Text().title } />
-                </Box>
-                <Box display= "flex" flexDirection= "row" justifyContent= "center" alignItems= "center" border= "solid 1px #00cec9" padding= "6px 17px" marginTop= "20px">
-                    <Link to= "/" style= {{ textDecoration: 'none' }}>
-                        <Ctrl.Typography text= "View my work" fontSize= "120%" color= "#00cec9" />
-                    </Link>
                 </Box>
             </Box>
         </Box>
