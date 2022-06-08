@@ -1,7 +1,6 @@
 // Libraries
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Box, Container, Grid } from '@mui/material';
-import { watchViewport } from 'tornis';
 
 // Core
 import Ctrl from '../../core/global/controls/Controls';
@@ -14,14 +13,9 @@ import { Image } from '../../core/global/design/Image';
 import Profile from '../../assets/images/profile.jpg';
 
 const Index = () => {
-    let [ width, setWidth ] = useState();
-    
-    useEffect(() => {
-        watchViewport(({ size }) => { setWidth(size.x); });
-    }, []);
 
     return (
-        <Box width= { width } padding= "100px 40px" bgcolor= "#dfe6e9">
+        <Box width= "100vw" padding= "100px 40px" bgcolor= "#dfe6e9">
             <Container>
                 <Box display= "flex" flexDirection= "column" justifyContent= "flex-start" alignItems= "stretch">
                     <Box display= "flex" flexDirection= "row" justifyContent= "flex-start" alignItems= "center">

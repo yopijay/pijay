@@ -5,6 +5,7 @@ import { Box } from '@mui/material';
 // Layouts
 import Intro from './intro';
 import About from './about';
+import Skills from './skills';
 
 const Index = () => {
 
@@ -12,6 +13,7 @@ const Index = () => {
         <Box dispaly= "flex" flexDirection= "column" justifyContent= "flex-start" alignItems= "stretch">
             <Intro />
             <About />
+            <Skills />
         </Box>
     );
 }

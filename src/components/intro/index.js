@@ -10,16 +10,14 @@ import Ctrl from '../../core/global/controls/Controls';
 import { Text } from '../../core/global/design/Text';
 
 const Index = () => {
-    let [ width, setWidth ] = useState();
     let [ height, setHeight ] = useState();
 
-    
     useEffect(() => {
-        watchViewport(({ size }) => { setWidth(size.x); setHeight(size.y) });
+        watchViewport(({ size }) => setHeight(size.y) );
     }, []);
 
     return (
-        <Box width= { width } height= { height } bgcolor= "#2d3436" display= "flex" flexDirecton= "row" justifyContent= "center" alignItems= "center" overflow= "hidden" id= "landing">
+        <Box width= "100vw" height= { height } bgcolor= "#2d3436" display= "flex" flexDirecton= "row" justifyContent= "center" alignItems= "center" overflow= "hidden" id= "landing">
             <Box display= "flex" flexDirection= "column" justifyContent= "center" alignItems= "center">
                 <Box display= "flex" flexDirection= "row" justifyContent= "flex-start" alignItems= "center">
                     <Ctrl.Typography text= "Hi, I`m " className= { Text().title } marginRight= "10px" />

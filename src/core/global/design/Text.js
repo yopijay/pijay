@@ -15,6 +15,19 @@ export const Text = makeStyles(({
             fontSize: '150% !important',
         },
     },
+    subtitle: {
+        fontSize: '160%',
+
+        '@media (max-width: 760px)': {
+            fontSize: '150% !important',
+        },
+        '@media (max-width: 500px)': {
+            fontSize: '140% !important',
+        },
+        '@media (max-width: 400px)': {
+            fontSize: '130% !important',
+        },
+    },
     info: {
         fontSize: '130%',
 
