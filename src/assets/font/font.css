@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Gilroy Light';
+    src: url('Gilroy-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'High Jinks';
+    src: url('High\ Jinks.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Deadly Advance';
+    src: url('Deadly\ Advance.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
