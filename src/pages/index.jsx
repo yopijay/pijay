@@ -10,7 +10,7 @@ const Index = () => {
     return (
         <Box display= "flex">
             <Container maxWidth= "xl">
-                
+                <Content />
             </Container>
         </Box>
     );
