@@ -9,6 +9,7 @@ import 'assets/css/scrollbar.css';
 
 // Constants
 import { mode } from "core/theme/mode.theme"; // Theme
+import { GlobalPrvdr } from "core/context/Global"; // Core
 import App from "./App"; // Layouts
 
 const container = document.getElementById('root');
@@ -17,6 +18,6 @@ const root = createRoot(container);
 root.render(
     <ThemeProvider theme= { mode }>
         <CssBaseline />
-        <App />
+        <GlobalPrvdr><App /></GlobalPrvdr>
     </ThemeProvider>
 );
