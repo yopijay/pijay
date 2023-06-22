@@ -16,6 +16,6 @@ export const label = {
 
 export const info = {
     color: '#acacb4',
-    fontSize: '150%',
+    fontSize: '130%',
     lineHeight: '28px'
 }
