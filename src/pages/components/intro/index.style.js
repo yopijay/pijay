@@ -1,7 +1,7 @@
 export const name = {
     fontSize: '225%',
     color: '#e4f7f8',
-    lineHeight: '32px',
+    lineHeight: '38px',
     fontFamily: 'Fashion Bolder',
     letterSpacing: '-2px'
 }

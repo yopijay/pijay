@@ -1,12 +1,12 @@
 // Libraries
 import { QueryClient, QueryClientProvider } from "react-query";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-
-// Layouts
-import Main from "./pages";
 import { Suspense } from "react";
-import { ScreenLoader } from "./core/loader/Screen";
-import { GlobalPrvdr } from "core/context/Global";
+
+// Constants
+import Main from "./pages"; // Layouts
+import { ScreenLoader } from "./core/loader/Screen"; // Loader
+import { GlobalPrvdr } from "core/context/Global"; // Context
 
 const App = () => {
     const client = new QueryClient();
