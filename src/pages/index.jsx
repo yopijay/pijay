@@ -1,30 +1,31 @@
 // Libraries
 import { Box, Container, Grid, Stack } from "@mui/material";
 
-// Layouts
+// Components
 import Navbar from "./components/global/navbar";
 import Intro from "./components/intro";
 import Socials from "./components/socials";
+import About from "./components/about";
 
 // Styles
 const container = { flexGrow: 1, height: '100vh', overflow: 'hidden', padding: '150px 0 0 0' };
-const content = { flexDirection: 'column', justifyContent: 'space-between', alignItems: 'stretch', height: '100%', paddingBottom: '50px' };
+const content = { flexDirection: 'column', justifyContent: 'space-between', alignItems: 'stretch', paddingBottom: '50px' };
 
 const Index = () => {
     return (
         <Box display= "flex">
             <Navbar />
-            <Container maxWidth= "lg">
-                <Grid container direction= "row" justifyContent= "flex-start" alignItems= "spacing" spacing= { 2 } sx= { container }>
-                    <Grid item xs= { 12 } md= { 4 }>
+            <Container maxWidth= "md">
+                <Grid container direction= "row" justifyContent= "flex-start" alignItems= "spacing" spacing= { 5 } sx= { container }>
+                    <Grid item xs= { 12 } md= { 5 }>
                         <Stack spacing= { 5 } sx= { content }>
                             <Intro />
                             <Socials />
                         </Stack>
                     </Grid>
-                    <Grid item xs= { 12 } md= { 8 }>
-                        <Stack direction= "column" justifyContent= "flex-start" alignItems= "stretch" spacing= { 1 }>
-                        
+                    <Grid item xs= { 12 } md= { 7 }>
+                        <Stack direction= "column" justifyContent= "flex-start" alignItems= "stretch" spacing= { 5 }>
+                            <About />
                         </Stack>
                     </Grid>
                 </Grid>
