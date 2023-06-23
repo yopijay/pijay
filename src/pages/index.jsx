@@ -2,7 +2,6 @@
 import { Box, Container, Grid, Stack } from "@mui/material";
 
 // Components
-import Navbar from "./components/global/navbar";
 import Intro from "./components/intro";
 import Socials from "./components/socials";
 import About from "./components/about";
@@ -14,7 +13,6 @@ const content = { flexDirection: 'column', justifyContent: 'space-between', alig
 const Index = () => {
     return (
         <Box display= "flex">
-            <Navbar />
             <Container maxWidth= "md">
                 <Grid container direction= "row" justifyContent= "flex-start" alignItems= "spacing" spacing= { 5 } sx= { container }>
                     <Grid item xs= { 12 } md= { 5 }>
