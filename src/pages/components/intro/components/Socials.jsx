@@ -1,11 +1,13 @@
 // Libraries
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Stack, Typography } from "@mui/material";
-import { brands } from "@fortawesome/fontawesome-svg-core/import.macro";
 import { Link } from "react-router-dom";
-import { links } from "./index.style";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { brands } from "@fortawesome/fontawesome-svg-core/import.macro";
 
-const Index = () => {
+// Constants
+import { links } from "../index.style"; // Styles
+
+const Socials = () => {
     return (
         <Stack direction= "row" justifyContent= "flex-start" alignItems= "center" spacing= { 2 }>
             <Typography sx= { links } component= { Link } 
@@ -30,4 +32,4 @@ const Index = () => {
     );
 }
 
-export default Index;
+export default Socials;

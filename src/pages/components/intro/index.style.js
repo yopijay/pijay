@@ -4,14 +4,23 @@ export const avatar = {
 }
 
 export const intro = {
-    fontSize: '150%',
-    color: '#b5e4f0'
+    fontSize: {
+        xs: '120%',
+        sm: '135%',
+        md: '150%'
+    },
+    color: '#b5e4f0',
+    transition: 'all 0.2s ease-in-out'
 }
 
 export const name = {
     color: '#9cdcec',
     fontFamily: 'Fashion Bolder',
-    fontSize: '220%',
+    fontSize: {
+        xs: '170%',
+        sm: '190%',
+        md: '220%'
+    },
 }
 
 export const profession = {

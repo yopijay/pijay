@@ -1,15 +1,12 @@
 // Libraries
-import { Box, Container, Grid, Stack, Typography } from "@mui/material";
+import { Box, Container, Stack } from "@mui/material";
 
 // Components
 import Intro from "./components/intro";
+import About from "./components/about";
 
 // Constants
 import { container } from "./index.style"; // Styles
-
-// Styles
-// const container = { flexGrow: 1, height: '100vh', overflow: 'hidden', padding: '150px 0 0 0' };
-// const content = { flexDirection: 'column', justifyContent: 'space-between', alignItems: 'stretch', paddingBottom: '50px' };
 
 const Index = () => {
     return (
@@ -17,6 +14,7 @@ const Index = () => {
             <Container maxWidth= "md">
                 <Stack sx= { container }>
                     <Intro />
+                    <About />
                 </Stack>
             </Container>
         </Box>
