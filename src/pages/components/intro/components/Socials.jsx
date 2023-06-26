@@ -17,8 +17,8 @@ const Socials = () => {
                 target= "https://instagram.com/kuyapijay?igshid=MzNINGNkZWQ4Mg==" 
                 to= "https://instagram.com/kuyapijay?igshid=MzNINGNkZWQ4Mg=="><FontAwesomeIcon icon= { brands('instagram') } /></Typography>
             <Typography sx= { links } component= { Link } 
-                target= "https://twitter.com/kuyapijay" 
-                to= "https://twitter.com/kuyapijay"><FontAwesomeIcon icon= { brands('twitter') } /></Typography>
+                target= "https://twitter.com/pijjaaayyyy" 
+                to= "https://twitter.com/pijjaaayyyy"><FontAwesomeIcon icon= { brands('twitter') } /></Typography>
             <Typography sx= { links } component= { Link } 
                 target= "https://www.youtube.com/@pijay8957" 
                 to= "https://www.youtube.com/@pijay8957"><FontAwesomeIcon icon= { brands('youtube') } /></Typography>

@@ -7,14 +7,15 @@ export const intro = {
     fontSize: {
         xs: '120%',
         sm: '135%',
-        md: '150%'
+        md: '140%'
     },
-    color: '#b5e4f0',
+    color: '#455A64',
+    fontWeight: 'bold',
     transition: 'all 0.2s ease-in-out'
 }
 
 export const name = {
-    color: '#9cdcec',
+    color: '#a8cad3',
     fontFamily: 'Fashion Bolder',
     fontSize: {
         xs: '170%',
@@ -24,13 +25,13 @@ export const name = {
 }
 
 export const profession = {
-    color: '#5cc4dc',
+    color: '#74979e',
     fontFamily: 'Fashion Bold',
     fontSize: '120%'
 }
 
 export const likes = {
-    color: '#b5e4f0',
+    color: '#78909C',
     fontSize: '110%'
 }
 
