@@ -15,12 +15,9 @@ const AGM = () => {
                             <Typography sx= { position }>Frontend Web Developer</Typography>
                             <Typography sx= { company }>Aktus Global Management, Inc.</Typography>
                         </Stack>
-                        <Typography sx= { info }>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eros diam, dignissim ac sem non, volutpat pulvinar elit. 
-                            Nunc venenatis facilisis ipsum, eu pharetra magna porta aliquam. Nulla vel ante est. Nullam vehicula imperdiet cursus. 
-                            In feugiat, nisl et vulputate elementum, felis turpis faucibus tellus, et feugiat turpis enim eget purus. Nulla accumsan efficitur ante eu porttitor. 
-                            In rutrum convallis posuere. Donec feugiat faucibus enim at finibus. Maecenas tortor mi, imperdiet non eleifend aliquet, tincidunt quis eros. 
-                            Praesent nunc velit, porta in mattis a, sodales ac velit. Mauris eu nunc dapibus, feugiat sem sed, tristique diam. 
-                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam in consectetur velit.</Typography>
+                        <Typography sx= { info }>Enhance and made additions for some functionality of their Asset Management System. 
+                            Part of the company's mobile app developer team for creating cross-platform Modular System.
+                            In charge of creating standard design frameworks for the company's future projects.</Typography>
                         <Stack direction= "column" justifyContent= "flex-start" alignItems= "stretch" spacing= { 2 }>
                             <Stack direction= "column" justifyContent= "flex-start" alignItems= "stretch">
                                 <Typography gutterBottom sx= { label }>Tech Stack</Typography>
