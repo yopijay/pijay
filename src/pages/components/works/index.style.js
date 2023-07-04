@@ -8,7 +8,15 @@ export const title = {
     transition: 'all 0.2s ease-in-out'
 }
 
-export const year = {
+export const sample = {
+    width: '85%',
+    height: 'auto',
+    transition: 'all 0.2s ease-in-out',
+    '&:hover': { transform: 'scale(1.05)' }
+}
+
+export const project = {
+    textDecoration: 'none',
     color: '#B0BEC5',
     fontWeight: 'bolder',
     fontSize: {
@@ -25,34 +33,6 @@ export const info = {
         xs: '110%',
         md: '100%'
     }
-}
-
-export const position = {
-    color: '#a8cad3',
-    fontSize: {
-        xs: '120%',
-        sm: '125%',
-        md: '130%'
-    },
-    transition: 'all 0.2s ease-in-out'
-}
-
-export const company = {
-    fontSize: {
-        xs: '105%',
-        sm: '110%',
-        md: '115%'
-    },
-    color: '#455A64',
-    fontWeight: 'bold',
-    transition: 'all 0.2s ease-in-out'
-}
-
-export const label = {
-    color: '#B0BEC5',
-    fontWeight: 'bolder',
-    fontSize: '100%',
-    transition: 'all 0.2s ease-in-out'
 }
 
 export const items = {
