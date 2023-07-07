@@ -9,18 +9,15 @@ const Index = () => {
         <Stack direction= "column" justifyContent= "flex-start" alignItems= "stretch" spacing= { 3 } sx= {{ padding: '60px 0' }}>
             <Typography sx= { title }>About Me</Typography>
             <Stack direction= "column" justifyContent= "flex-start" alignItems= "stretch" spacing= { 2 }>
-                <Typography sx= { info }>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eros diam, dignissim ac sem non, volutpat pulvinar elit. 
-                        Nunc venenatis facilisis ipsum, eu pharetra magna porta aliquam. Nulla vel ante est. Nullam vehicula imperdiet cursus. 
-                        In feugiat, nisl et vulputate elementum, felis turpis faucibus tellus, et feugiat turpis enim eget purus. Nulla accumsan efficitur ante eu porttitor. 
-                        In rutrum convallis posuere. Donec feugiat faucibus enim at finibus. Maecenas tortor mi, imperdiet non eleifend aliquet, tincidunt quis eros. 
-                        Praesent nunc velit, porta in mattis a, sodales ac velit. Mauris eu nunc dapibus, feugiat sem sed, tristique diam. 
-                        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam in consectetur velit.</Typography>
-                <Typography sx= { info }>Duis maximus nisl vitae pulvinar iaculis. Nam odio eros, mollis at elit sagittis, feugiat dapibus turpis. 
-                        Sed mattis elit quam, ac tristique diam vestibulum sed. Phasellus eget ipsum lacinia, ullamcorper urna sed, eleifend est. 
-                        Suspendisse interdum vehicula ligula, id tempus orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
-                        Mauris at magna dapibus est varius fermentum vitae vel metus. Maecenas dictum id magna ut fermentum. 
-                        Phasellus vulputate cursus purus nec accumsan. Quisque elementum, ligula volutpat condimentum luctus, tortor elit egestas nibh, 
-                        vel vehicula odio tellus vitae ligula. Quisque dictum sem eu cursus feugiat. Sed sit amet sem at leo euismod vehicula.</Typography>
+                <Typography sx= { info }>I`m a front-end web developer with a 4 year experience in web development.
+                    And the funny thing is that I'm not that good when it comes to designing.
+                    I'm really passionate about creating a clean, reusable and easy to read components/functions
+                    that helps me to make my project work faster. Currently, I'm working as a
+                    fullstack developer at KC Electrical Innovation, Inc and I`m developing a web app inventory
+                    system for internal use.</Typography>
+                <Typography sx= { info }>As a frontend web developer, I am currently studying various frameworks and libraries such as ReactJS and 
+                    Typescript for the framework and Material UI for the design and responsiveness of the website. And also for the future I am also studying 
+                    the backend part of the development such as databases and APIs</Typography>
             </Stack>
         </Stack>
     );
