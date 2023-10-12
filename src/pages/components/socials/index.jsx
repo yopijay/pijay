@@ -1,7 +1,8 @@
 // Libraries
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Link, Stack, Typography } from "@mui/material";
+import { Stack, Typography } from "@mui/material";
 import { brands } from "@fortawesome/fontawesome-svg-core/import.macro";
+import { Link } from "react-router-dom";
 
 // Constants
 const socials = [
