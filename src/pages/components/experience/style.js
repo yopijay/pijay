@@ -11,7 +11,7 @@ export const year = {
 }
 
 export const duties = {
-    color: '#FFF6E0',
+    color: '#F1F6F9',
     fontFamily: 'Montserrat ExtraLight',
 }
 

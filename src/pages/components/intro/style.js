@@ -6,7 +6,7 @@ export const name = {
     fontSize: {
         xs: '190%',
         md: '220%',
-        lg: '280%'
+        lg: '255%'
     },
     lineHeight: '40px'
 }
@@ -22,6 +22,6 @@ export const position = {
 }
 
 export const info = {
-    color: '#FFF6E0',
+    color: '#F1F6F9',
     fontFamily: 'Montserrat ExtraLight'
 }
