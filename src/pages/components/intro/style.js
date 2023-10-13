@@ -1,6 +1,6 @@
 export const name = {
     fontWeight: 'bold',
-    color: '#FFF6E0',
+    color: '#D8D9DA',
     fontFamily: 'Montserrat ExtraBold',
     letterSpacing: '-1px',
     fontSize: {
@@ -12,7 +12,8 @@ export const name = {
 }
 
 export const position = {
-    color: '#FFF6E0',
+    color: '#D8D9DA',
+    lineHeight: '24px',
     fontFamily: 'Montserrat SemiBold',
     fontSize: {
         xs: '110%',
@@ -21,7 +22,6 @@ export const position = {
 }
 
 export const info = {
-    color: '#D8D9DA',
-    fontFamily: 'Montserrat ExtraLight',
-    fontSize: '100%'
+    color: '#FFF6E0',
+    fontFamily: 'Montserrat ExtraLight'
 }
