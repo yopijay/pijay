@@ -2,24 +2,23 @@
 import { Box, Chip, Grid, Stack, Typography } from "@mui/material";
 
 // Constants
-import { company, duties, position, year } from "../style"; // Styles
-const techstack = [ 'ReactJS', 'ExpressJS', 'Material UI', 'Node JS', 'HTML', 'CSS', 'Javascript', 'RestAPI', 'PostgreSQL' ];
-const tools = [ 'VSCode', 'Navicat', 'Vercel', 'Render', 'Github' ]
+import { company, duties, position, year } from "../style";
+const techstack = [ 'NextJS', 'Bootstrap', 'Node JS', 'HTML', 'CSS', 'Javascript' ];
+const tools = [ 'VSCode', 'Github', 'Jira' ]
 
-const KCEI = () => {
+const StunnerYPP = () => {
     return (
         <Box>
             <Grid container direction= "row" justifyContent= "flex-start" alignItems= "stretch" spacing= { 1 }>
-                <Grid item xs= { 12 } md= { 4 }><Typography sx= { year }>May 2022 - Feb 2023</Typography></Grid>
+                <Grid item xs= { 12 } md= { 4 }><Typography sx= { year }>Feb 2023 - Present</Typography></Grid>
                 <Grid item xs= { 12 } md= { 8 }>
                     <Stack direction= "column" justifyContent= "flex-start" alignItems= "stretch" spacing= { 2 }>
                         <Stack direction= "column" justifyContent= "flex-start" alignItems= "stretch">
-                            <Typography sx= { company }>KC Electrical Innovation, Inc.</Typography>
-                            <Typography sx= { position }>Fullstack Web Developer | IT Staff</Typography>
+                            <Typography sx= { company }>Stunner YPP Corporation</Typography>
+                            <Typography sx= { position }>Frontend Web Developer</Typography>
                         </Stack>
-                        <Typography sx= { duties }>Developed an Inventory Management System for internal use of the company which also functions to 
-                            determine the annual inventory count, accounting the actual inventory in stock. Do IT Staff stuff like fixing printer, refilling inks, configure
-                            LAN and Landline cables, setting up new computer and installing softwares.</Typography>
+                        <Typography sx= { duties }>More focused on fixing minimal bugs and sometimes an errors. Also creating new product from scratch and adding additional feature
+                        for existing sites depends of what our client wants.</Typography>
                         <Stack direction= "column" justifyContent= "flex-start" alignItems= "stretch" spacing= { 2 }>
                             <Stack direction= "column" justifyContent= "flex-start" alignItems= "stretch">
                                 <Typography marginBottom= "12px" variant= "body2" color= "#FFF6E0" fontWeight= "bold">Tech Stack</Typography>
@@ -41,4 +40,4 @@ const KCEI = () => {
     );
 }
 
-export default KCEI;
+export default StunnerYPP;
