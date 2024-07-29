@@ -10,7 +10,7 @@ const KCEI = () => {
     return (
         <Box>
             <Grid container direction= "row" justifyContent= "flex-start" alignItems= "stretch" spacing= { 1 }>
-                <Grid item xs= { 12 } md= { 4 }><Typography sx= { year }>May 2022 - Feb 2023</Typography></Grid>
+                <Grid item xs= { 12 } md= { 4 }><Typography sx= { year }>May 2022 - Feb 2024</Typography></Grid>
                 <Grid item xs= { 12 } md= { 8 }>
                     <Stack direction= "column" justifyContent= "flex-start" alignItems= "stretch" spacing= { 2 }>
                         <Stack direction= "column" justifyContent= "flex-start" alignItems= "stretch">
