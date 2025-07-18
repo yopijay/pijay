@@ -9,12 +9,14 @@ import { title } from "./style"; // Styles
 import KCEI from "./layouts/KCEI";
 import Abrasoft from "./layouts/Abrasoft";
 import StunnerYPP from "./layouts/StunnerYPP";
+import RisingTide from "./layouts/RisingTide";
 
 const Index = () => {
     return (
         <Stack direction= "column" justifyContent= "flex-start" alignItems= "stretch" spacing= { 3 }>
             <Typography sx= { title }>Experience</Typography>
             <Stack direction= "column" justifyContent= "flex-start" alignItems= "stretch" spacing= { 4 }>
+                <RisingTide />
                 <StunnerYPP />
                 <KCEI />
                 <Abrasoft />
