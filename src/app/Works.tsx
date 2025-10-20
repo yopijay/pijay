@@ -8,13 +8,14 @@ import SPower from "@/assets/images/s-power.png";
 import Image from "next/image";
 
 const Works = () => {
+    const yearsOfExperience = new Date().getFullYear() - 2019;
     const projects = [
         {
             id: 1,
             title: "My Portfolio",
             description: "A showcase of my work and projects.",
             image: Portfolio,
-            technologies: ["React", "Next.js", "TypeScript"],
+            technologies: ["Next", "TypeScript", "Tailwind CSS"],
             liveURL: "https://pijay.vercel.app/",
             githubURL: "https://github.com/yopijay/pijay",
         },
@@ -25,9 +26,9 @@ const Works = () => {
                 "A web application for internal use of the compan. Used for tracking the remaining stocks of the product they are selling.",
             image: KennethCommercial,
             technologies: [
-                "React.js",
+                "React",
                 "Material UI",
-                "Node.js",
+                "Node",
                 "Express",
                 "PostgreSQL",
                 "Restful API",
@@ -41,9 +42,9 @@ const Works = () => {
                 "Web application that provides services that makes adoption, surrendering, and reporting missing animals easier. It also provides information about Quezon City Animals including latest announcements to keep you updated. Here in QC ACAC, we offer love and care to the animals!",
             image: QCACACE,
             technologies: [
-                "React.js",
+                "React",
                 "Material UI",
-                "Node.js",
+                "Node",
                 "Express",
                 "PostgreSQL",
                 "Restful API",
@@ -57,7 +58,7 @@ const Works = () => {
             description:
                 "My web design proporal for S-power Corporation. This site is only for viewing of their products and also a way to contact the company for other services they can offer.",
             image: SPower,
-            technologies: ["React.js", "Material UI"],
+            technologies: ["React", "Material UI"],
             liveURL: "https://s-power.vercel.app/",
             githubURL: "https://github.com/yopijay/s-power",
         },
@@ -67,18 +68,17 @@ const Works = () => {
             description:
                 "E-invitation site for my own wedding! Planning to add RSVP functionality for future use.",
             image: Wedding,
-            technologies: ["React.js", "Material UI"],
+            technologies: ["React", "Material UI"],
             liveURL: "https://paul-hazel.vercel.app/",
             githubURL: "https://github.com/yopijay/rsvp",
         },
     ];
     return (
-        <section className="py-10">
+        <section className="py-20 px-6">
             <div className="max-w-6xl mx-auto">
-                <h2 className="text-4xl text-[#F7F3E9] text-center mb-12 font-montserrat-thin">
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl text-[#F7F3E9] text-center mb-12 font-montserrat-thin">
                     My <span className="text-[#C8A882]">Works</span>
                 </h2>
-
                 <div className="columns-1 md:columns-2 lg:columns-3 gap-6">
                     {/* Image-First Project Card */}
                     {projects.map((project) => (
@@ -113,7 +113,7 @@ const Works = () => {
                                     {project.title}
                                 </h3>
 
-                                <p className="text-[#F7F3E9] text-sm mb-4 leading-relaxed font-montserrat-light">
+                                <p className="text-[#F7F3E9] text-sm mb-4 leading-relaxed font-montserrat-thin">
                                     {project.description}
                                 </p>
 
@@ -156,10 +156,10 @@ const Works = () => {
 
                     {/* Stats/Info Card */}
                     <div className="break-inside-avoid mb-6 bg-gradient-to-br from-[#C8A882] to-[#C8A882]/80 rounded-2xl p-6">
-                        <h3 className="text-xl font-bold text-[#36454F] mb-3">
+                        <h3 className="text-xl font-montserrat-bold text-[#36454F] mb-3">
                             🎯 My Approach
                         </h3>
-                        <p className="text-[#36454F] text-sm leading-relaxed">
+                        <p className="text-[#36454F] text-sm leading-relaxed font-montserrat-light">
                             I specialize in transforming Figma designs into
                             pixel-perfect, responsive websites. Every project is
                             built with attention to detail and modern best
@@ -168,49 +168,41 @@ const Works = () => {
                     </div>
 
                     {/* Numbers Card */}
-                    {/* <div className="break-inside-avoid mb-6 bg-white/5 backdrop-blur-sm border border-[#C8A882]/20 rounded-2xl p-6">
-                        <h3 className="text-lg font-bold text-[#C8A882] mb-4">
+                    <div className="break-inside-avoid mb-6 bg-white/5 backdrop-blur-sm border border-[#C8A882]/20 rounded-2xl p-6">
+                        <h3 className="text-lg font-montserrat-bold text-[#C8A882] mb-4">
                             By the Numbers
                         </h3>
                         <div className="space-y-3">
                             <div className="flex justify-between">
-                                <span className="text-[#F7F3E9]/70 text-sm">
-                                    Projects Completed
-                                </span>
-                                <span className="text-[#C8A882] font-bold">
-                                    25+
-                                </span>
-                            </div>
-                            <div className="flex justify-between">
-                                <span className="text-[#F7F3E9]/70 text-sm">
+                                <span className="text-[#F7F3E9]/70 text-sm font-montserrat-light">
                                     Years Experience
                                 </span>
-                                <span className="text-[#C8A882] font-bold">
-                                    6
+                                <span className="text-[#C8A882]  font-montserrat-bold">
+                                    {yearsOfExperience}
                                 </span>
                             </div>
                             <div className="flex justify-between">
-                                <span className="text-[#F7F3E9]/70 text-sm">
+                                <span className="text-[#F7F3E9]/70 text-sm font-montserrat-light">
                                     Technologies
                                 </span>
-                                <span className="text-[#C8A882] font-bold">
+                                <span className="text-[#C8A882]  font-montserrat-bold">
                                     10+
                                 </span>
                             </div>
                         </div>
-                    </div> */}
+                    </div>
 
                     {/* Life Verse Card */}
                     <div className="break-inside-avoid mb-6 bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
                         <div className="text-4xl text-[#C8A882] mb-3">
                             &quot;
                         </div>
-                        <p className="text-[#F7F3E9]/80 text-sm leading-relaxed mb-4">
+                        <p className="text-[#F7F3E9]/80 text-sm leading-relaxed mb-4  font-montserrat-light">
                             Trust in the Lord with all your heart; do not depend
                             on your own understanding. Seek his will in all you
                             do, and he will show you which path to take.
                         </p>
-                        <div className="text-[#C8A882] text-sm font-medium">
+                        <div className="text-[#C8A882] text-sm  font-montserrat-medium">
                             - Proverbs 3:5-6 NLT
                         </div>
                     </div>

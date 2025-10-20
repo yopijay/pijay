@@ -10,7 +10,8 @@ const Header = () => {
                     <Image alt="Pijay" src={Logo} className="w-12" />
                     <div className="flex flex-row items-center gap-x-10">
                         <Link
-                            href={""}
+                            href="https://drive.google.com/file/d/1ecoc-yVe58rfN5131Wotu6dri5Dw4Zbd/view?usp=sharing"
+                            target="_blank"
                             className="uppercase border border-[#C8A882] py-2 px-3 rounded-md text-[#C8A882] hover:bg-[#C8A882] hover:border-[#C8A882] hover:text-[#F7F3E9] transition-all ease-in-out duration-300"
                         >
                             Download my CV
