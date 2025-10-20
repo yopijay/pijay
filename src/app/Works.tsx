@@ -74,12 +74,12 @@ const Works = () => {
         },
     ];
     return (
-        <section className="py-20 px-6">
+        <section className="py-20 px-6 transition-all ease-in-out">
             <div className="max-w-6xl mx-auto">
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl text-[#F7F3E9] text-center mb-12 font-montserrat-thin">
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl text-[#F7F3E9] text-center mb-12 font-montserrat-thin transition-all ease-in-out">
                     My <span className="text-[#C8A882]">Works</span>
                 </h2>
-                <div className="columns-1 md:columns-2 lg:columns-3 gap-6">
+                <div className="columns-1 md:columns-2 lg:columns-3 gap-6 transition-all ease-in-out">
                     {/* Image-First Project Card */}
                     {projects.map((project) => (
                         <div

@@ -78,9 +78,9 @@ const Experience = () => {
     ];
 
     return (
-        <section className="py-20 px-6">
+        <section className="px-6 transition-all ease-in-out">
             <div className="max-w-4xl mx-auto">
-                <h2 className="text-4xl font-montserrat-thin text-[#F7F3E9] text-center mb-16">
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-montserrat-thin text-[#F7F3E9] text-center mb-16 transition-all ease-in-out">
                     My <span className="text-[#C8A882]">Experience</span>
                 </h2>
 
@@ -92,7 +92,7 @@ const Experience = () => {
                         {experiences.map((exp) => (
                             <div key={exp.id} className="relative flex gap-8">
                                 {/* Timeline Dot */}
-                                <div className="relative z-10">
+                                <div className="hidden sm:block relative z-10">
                                     <div className="w-16 h-16 bg-[#C8A882] rounded-full flex items-center justify-center border-4 border-[#36454F]">
                                         <span className="text-[#36454F] font-montserrat-bold text-sm">
                                             {String(exp.id).padStart(2, "0")}
@@ -101,7 +101,7 @@ const Experience = () => {
                                 </div>
 
                                 {/* Content Card */}
-                                <div className="flex-1 bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:bg-white/10 transition-all duration-300">
+                                <div className="flex-1 bg-white/5 backdrop-blur-sm rounded-2xl p-4 sm:p-6 lg:p-8 border border-white/10 hover:bg-white/10 transition-all duration-300">
                                     <div className="flex flex-wrap items-start justify-between mb-4">
                                         <div>
                                             <h3 className="text-xl font-montserrat-bold text-[#C8A882] mb-1">
@@ -143,7 +143,7 @@ const Experience = () => {
                                     </div>
 
                                     {/* Achievements */}
-                                    <div>
+                                    {exp.achievements.length > 0 && <div>
                                         <h4 className="text-sm font-montserrat-bold text-[#C8A882] mb-3">
                                             Key Achievements
                                         </h4>
@@ -164,7 +164,7 @@ const Experience = () => {
                                                 )
                                             )}
                                         </ul>
-                                    </div>
+                                    </div>}
                                 </div>
                             </div>
                         ))}
