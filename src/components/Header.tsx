@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <div className="fixed w-full bg-[#36454F]/60 custom-blur z-50">
             <div className=" max-w-4xl mx-auto">
-                <div className="flex flex-row items-center justify-between py-5">
+                <div className="flex flex-row items-center justify-between py-3 lg:py-5 px-4 lg:px-0">
                     <Image alt="Pijay" src={Logo} className="w-12" />
                     <div className="flex flex-row items-center gap-x-10">
                         <Link
