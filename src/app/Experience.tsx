@@ -8,7 +8,7 @@ const Experience = () => {
             location: "Makati City, Philippines",
             description:
                 "Specialized in transforming Figma designs into functional, reusable, and responsive web applications with pixel-perfect precision. Responsible for comprehensive unit testing of components to ensure code quality and reliability, while seamlessly integrating RESTful APIs to deliver dynamic user experiences.",
-            technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Jest"],
+            technologies: ["Next", "TypeScript", "Tailwind CSS", "Jest"],
             achievements: [],
         },
         {
@@ -19,7 +19,7 @@ const Experience = () => {
             location: "Eastwood City, Philippines",
             description:
                 "More focused on fixing minimal bugs and sometimes an errors. Also creating new product from scratch and adding additional feature for existing sites depends of what our client wants.",
-            technologies: ["Playwright", "Next.js", "Bootstrap"],
+            technologies: ["Playwright", "Next", "Bootstrap"],
             achievements: [],
         },
         {
@@ -31,10 +31,10 @@ const Experience = () => {
             description:
                 "Developed an Inventory Management System for internal use of the company which also functions to determine the annual inventory count, accounting the actual inventory in stock. Do IT Staff stuff like fixing printer, refilling inks, configure LAN and Landline cables, setting up new computer and installing softwares.",
             technologies: [
-                "React.js",
+                "React",
                 "Material UI",
-                "Node.js",
-                "Express.js",
+                "Node",
+                "Express",
                 "PostgreSQL",
                 "Restful API",
             ],
@@ -50,7 +50,7 @@ const Experience = () => {
             location: "Remote",
             description:
                 "Developed a crypto-exchange website, facilitating smooth transactions for trading and transferring crypto assets between crypto holders.",
-            technologies: ["React.js", "Material UI", "Restful API"],
+            technologies: ["React", "Material UI", "Restful API"],
             achievements: [],
         },
         {
@@ -62,7 +62,7 @@ const Experience = () => {
             description:
                 "Enhance and made additions for some functionality of their Asset Management System. Part of the company's mobile app developer team for creating cross-platform Modular System. In charge of creating standard design frameworks for the company's future projects.",
             technologies: [
-                "React.js",
+                "React",
                 "Material UI",
                 "Restful API",
                 "Laravel",
@@ -143,28 +143,30 @@ const Experience = () => {
                                     </div>
 
                                     {/* Achievements */}
-                                    {exp.achievements.length > 0 && <div>
-                                        <h4 className="text-sm font-montserrat-bold text-[#C8A882] mb-3">
-                                            Key Achievements
-                                        </h4>
-                                        <ul className="space-y-2">
-                                            {exp.achievements.map(
-                                                (achievement, achIndex) => (
-                                                    <li
-                                                        key={achIndex}
-                                                        className="flex items-start gap-3 text-[#F7F3E9]/80 font-montserrat-light text-sm"
-                                                    >
-                                                        <span className="text-[#C8A882] mt-1">
-                                                            •
-                                                        </span>
-                                                        <span>
-                                                            {achievement}
-                                                        </span>
-                                                    </li>
-                                                )
-                                            )}
-                                        </ul>
-                                    </div>}
+                                    {exp.achievements.length > 0 && (
+                                        <div>
+                                            <h4 className="text-sm font-montserrat-bold text-[#C8A882] mb-3">
+                                                Key Achievements
+                                            </h4>
+                                            <ul className="space-y-2">
+                                                {exp.achievements.map(
+                                                    (achievement, achIndex) => (
+                                                        <li
+                                                            key={achIndex}
+                                                            className="flex items-start gap-3 text-[#F7F3E9]/80 font-montserrat-light text-sm"
+                                                        >
+                                                            <span className="text-[#C8A882] mt-1">
+                                                                •
+                                                            </span>
+                                                            <span>
+                                                                {achievement}
+                                                            </span>
+                                                        </li>
+                                                    )
+                                                )}
+                                            </ul>
+                                        </div>
+                                    )}
                                 </div>
                             </div>
                         ))}
