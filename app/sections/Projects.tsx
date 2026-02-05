@@ -1,5 +1,12 @@
 import Link from "next/link";
 
+import Portfolio from "@public/projects/portfolio.png";
+import QCACACE from "@public/projects/qcacace.png";
+import EWedding from "@public/projects/e-wedding.png";
+import AMS from "@public/projects/asset-management.png";
+import SPower from "@public/projects/s-power.png";
+import Image from "next/image";
+
 const Projects = () => {
     const projects = [
         {
@@ -7,7 +14,7 @@ const Projects = () => {
             description: "A showcase of my work and projects.",
             demo: "https://pijay.vercel.app/",
             techstack: ["NextJS", "TypeScript", "Tailwind CSS"],
-            screenshot: "",
+            screenshot: Portfolio,
         },
         {
             name: "Quezon City Animal Care & Adoption Center",
@@ -23,14 +30,14 @@ const Projects = () => {
                 "PostgreSQL",
                 "RESTful APIs",
             ],
-            screenshot: "",
+            screenshot: QCACACE,
         },
         {
             name: "Wedding E-Invitation",
             description: `E-invitation site for my own wedding. Planning to add RSVP functionality for future use.`,
             demo: "https://paul-hazel.vercel.app/",
             techstack: ["ReactJS", "MaterialUI"],
-            screenshot: "",
+            screenshot: EWedding,
         },
         {
             name: "Inventory & Asset Management System",
@@ -45,7 +52,7 @@ const Projects = () => {
                 "PostgreSQL",
                 "RESTful APIs",
             ],
-            screenshot: "",
+            screenshot: AMS,
         },
         {
             name: "S-Power",
@@ -53,7 +60,7 @@ const Projects = () => {
                 to contact the company for other services they can offer.`,
             demo: "https://s-power.vercel.app/",
             techstack: ["ReactJS", "MaterialUI"],
-            screenshot: "",
+            screenshot: SPower,
         },
     ];
     return (
@@ -61,7 +68,10 @@ const Projects = () => {
             <p className="text-md font-bold">PROJECTS</p>
             <div className="flex flex-col gap-y-7">
                 {projects.map((project, index) => (
-                    <div className="flex flex-col gap-y-2" key={index}>
+                    <div
+                        className="flex flex-col gap-y-2 lg:hover:bg-[#4b2e2d13] lg:p-4 lg:rounded-md lg:transition-colors lg:duration-300"
+                        key={index}
+                    >
                         <Link
                             target="_blank"
                             href={project.demo}
@@ -72,6 +82,11 @@ const Projects = () => {
                         <p className="text-sm leading-relaxed">
                             {project.description}
                         </p>
+                        <Image
+                            src={project.screenshot}
+                            alt={project.name}
+                            className="rounded-md shadow-xl w-6/12 my-2"
+                        />
                         <div className="flex flex-row flex-wrap gap-2">
                             {project.techstack.map((tech, techIndex) => (
                                 <p
