@@ -12,27 +12,27 @@ const PrimaryInfo = () => {
     const socialLinks = [
         {
             icon: faGithub,
-            link: "",
+            link: "https://github.com/yopijay",
             alt: "Github",
         },
         {
             icon: faFacebook,
-            link: "",
+            link: "https://www.facebook.com/yopijay",
             alt: "Facebook",
         },
         {
             icon: faInstagram,
-            link: "",
+            link: "https://www.instagram.com/pijaayyyy__/",
             alt: "Instagram",
         },
         {
             icon: faYoutube,
-            link: "",
+            link: "https://www.youtube.com/@pijay8957",
             alt: "Youtube",
         },
         {
             icon: faLinkedin,
-            link: "",
+            link: "https://www.linkedin.com/in/paul-john-judan-0060a41b9/",
             alt: "Linkedin",
         },
     ];
