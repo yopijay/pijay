@@ -17,7 +17,7 @@ export default function Home() {
                     <Credits />
                 </div>
             </div>
-            <div className="fixed inset-0 overflow-hidden pointer-events-none">
+            {/* <div className="fixed inset-0 overflow-hidden pointer-events-none">
                 {[...Array(40)].map((_, index) => (
                     <div
                         className="absolute w-1.5 h-1.5 rounded-full opacity-60"
@@ -31,7 +31,7 @@ export default function Home() {
                         }}
                     />
                 ))}
-            </div>
+            </div> */}
         </>
     );
 }

@@ -1,6 +1,28 @@
 const Experience = () => {
     const experiences = [
         {
+            company: "Flowmetric Group",
+            role: "Fullstack Developer | Network Administrator Assistant",
+            duration: "Nov 2025 - Present",
+            description: `Building the company’s internal web platform (ongoing), handling both frontend and backend development. 
+                Developed a unified communication Power Apps system for logging and tracking client-reported issues, integrated with Power Automate and Dataverse. 
+                Also responsible for deployment and technical documentation.`,
+            techstack: [
+                "NextJS",
+                "TypeScript",
+                "Tailwind CSS",
+                "Power Apps",
+                "Power Automate",
+                "Dataverse",
+                "Azure DevOps",
+                "Prisma",
+                "Git",
+                "RESTful APIs",
+                "GraphQL",
+                "MySQL",
+            ],
+        },
+        {
             company: "Rising Tide Digital, Inc.",
             role: "Frontend Developer",
             duration: "Nov 2024 - Jul 2025",
@@ -72,7 +94,10 @@ const Experience = () => {
                         <p>{exp.description}</p>
                         <div className="flex flex-row flex-wrap gap-2">
                             {exp.techstack.map((tech, techIndex) => (
-                                <p key={techIndex} className="bg-[#4b2e2d98] text-[#dcc7b6] px-2 py-1 rounded-full text-sm font-medium whitespace-nowrap">
+                                <p
+                                    key={techIndex}
+                                    className="bg-[#4b2e2d98] text-[#dcc7b6] px-2 py-1 rounded-full text-sm font-medium whitespace-nowrap"
+                                >
                                     {tech}
                                 </p>
                             ))}
